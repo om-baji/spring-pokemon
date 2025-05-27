@@ -38,5 +38,4 @@ public class PokemonController {
     public List<PokemonModel> getByType(@RequestParam String type) {
         return pokemonService.getPokemonByType(type);
     }
-
 }
