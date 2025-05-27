@@ -29,4 +29,9 @@ public class PokemonService {
         return pokemonRepository.findByTypesContaining(type);
     }
 
+    public PokemonModel setPokemon(PokemonModel pokemonModel) {
+        pokemonRepository.save(pokemonModel);
+
+        return pokemonModel;
+    }
 }
